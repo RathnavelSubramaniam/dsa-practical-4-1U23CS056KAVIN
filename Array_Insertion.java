@@ -19,9 +19,15 @@ public class Array_Insertion {
         System.out.println("Enter the element to be inserted");
         e=sc.nextInt();
         arrayInsert(arr,p,e,len);
-    }
-    static void arrayInsert()
-    {
-    //TYPE OF CODE HERE
-    }
+    
 }
+static void arrayInsert(int arr[],int p,int e,int len){
+    for (int i = len; i >= p; i--) {
+       
+            arr[i] = arr[i - 1];
+        }
+
+       
+        arr[p - 1] = e;
+    }
+} 
