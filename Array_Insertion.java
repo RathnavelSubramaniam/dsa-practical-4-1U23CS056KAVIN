@@ -12,7 +12,7 @@ for(int i=0;i<len;i++)
 {
 arr[i]=sc.nextInt();
 }
-System.out.println("Enter the position where you want to insert");
+System.out.println("Enter the position where you want to insert:");
 p=sc.nextInt();
 System.out.println("Enter the element to be inserted");
 e=sc.nextInt();
@@ -24,7 +24,8 @@ static void arrayInsert(int[] arr,int p,int e,int len)
        arr[i+1]=arr[i];
        }
        arr[p-1]=e;
-       System.out.println("After inserting"+e+"Element in the position"+p);
+       System.out.println("After inserting");
+       System.out.println("length of the array" +" "+ len);
        for(int i=0;i<=len;i++){
              System.out.println("arr["+i+"]="+arr[i]);
                }
